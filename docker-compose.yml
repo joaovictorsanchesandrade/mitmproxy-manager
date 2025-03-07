@@ -143,6 +143,18 @@ services:
     tty: true
     networks:
       - mitmproxy_net
-  mitm
-::contentReference[oaicite:0]{index=0}
+  mitmproxy14:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy14
+    ports:
+      - "8105:8080"
+    command: >
+      sh -c "mitmdump --mode upstream=http://fineproxy.xyz:3094 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+    stdin_open: true
+    tty: true
+    networks:
+      - mitmproxy_net
+networks:
+  mitmproxy_net:
+    driver: bridge
  
