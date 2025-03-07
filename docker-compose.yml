@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3081 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3081 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -17,7 +17,7 @@ services:
     ports:
       - "8082:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3082 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3082 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -28,7 +28,7 @@ services:
     ports:
       - "8084:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3083 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3083 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -39,7 +39,7 @@ services:
     ports:
       - "8086:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3084 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3084 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -50,7 +50,7 @@ services:
     ports:
       - "8088:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3085 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3085 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -61,7 +61,7 @@ services:
     ports:
       - "8090:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3086 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3086 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -72,7 +72,7 @@ services:
     ports:
       - "8092:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3087 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3087 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -83,7 +83,7 @@ services:
     ports:
       - "8094:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3088 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3088 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -94,7 +94,7 @@ services:
     ports:
       - "8096:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3089 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3089 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -105,7 +105,7 @@ services:
     ports:
       - "8098:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3090 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3090 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -116,7 +116,7 @@ services:
     ports:
       - "8100:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3091 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3091 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -127,7 +127,7 @@ services:
     ports:
       - "8102:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3092 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3092 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -138,7 +138,7 @@ services:
     ports:
       - "8104:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3093 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3093 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
@@ -149,7 +149,7 @@ services:
     ports:
       - "8105:8080"
     command: >
-      sh -c "mitmdump --mode upstream:http://fineproxy.xyz:3094 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy"
+      sh -c "mitmweb --mode upstream:http://fineproxy.xyz:3094 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy --ssl-insecure"
     stdin_open: true
     tty: true
     networks:
