@@ -32,7 +32,7 @@ for proxie, porta in zip(PROXIES, MITMPROXY_PORTAS):
     auth, proxie = proxie.replace('http://', '').split('@')
     print(auth, proxie)
     print(porta)
-    subprocess.Popen(['mitmdump', '-p', str(porta), '--mode', f'upstream:http://{proxie}', '--upstream-auth', auth])
+    subprocess.Popen(['poetry', 'run', 'mitmdump', '-p', str(porta), '--mode', f'upstream:http://{proxie}', '--upstream-auth', auth])
 
     
 
