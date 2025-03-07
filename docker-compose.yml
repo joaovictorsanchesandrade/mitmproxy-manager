@@ -5,7 +5,7 @@ services:
     container_name: mitmproxy1
     ports:
       - "8080:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3081
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3081 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy2:
@@ -13,7 +13,7 @@ services:
     container_name: mitmproxy2
     ports:
       - "8082:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3082
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3082 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy3:
@@ -21,7 +21,7 @@ services:
     container_name: mitmproxy3
     ports:
       - "8084:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3083
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3083 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy4:
@@ -29,7 +29,7 @@ services:
     container_name: mitmproxy4
     ports:
       - "8086:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3084
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3084 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy5:
@@ -37,7 +37,7 @@ services:
     container_name: mitmproxy5
     ports:
       - "8088:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3085
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3085 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy6:
@@ -45,7 +45,7 @@ services:
     container_name: mitmproxy6
     ports:
       - "8090:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3086
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3086 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy7:
@@ -53,7 +53,7 @@ services:
     container_name: mitmproxy7
     ports:
       - "8092:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3087
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3087 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy8:
@@ -61,7 +61,7 @@ services:
     container_name: mitmproxy8
     ports:
       - "8094:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3088
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3088 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy9:
@@ -69,7 +69,7 @@ services:
     container_name: mitmproxy9
     ports:
       - "8096:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3089
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3089 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy10:
@@ -77,7 +77,7 @@ services:
     container_name: mitmproxy10
     ports:
       - "8098:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3090
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3090 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy11:
@@ -85,7 +85,7 @@ services:
     container_name: mitmproxy11
     ports:
       - "8100:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3091
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3091 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy12:
@@ -93,7 +93,7 @@ services:
     container_name: mitmproxy12
     ports:
       - "8102:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3092
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3092 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy13:
@@ -101,7 +101,7 @@ services:
     container_name: mitmproxy13
     ports:
       - "8104:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3093
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3093 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
   mitmproxy14:
@@ -109,7 +109,7 @@ services:
     container_name: mitmproxy14
     ports:
       - "8106:8080"
-    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3094
+    command: mitmproxy --mode upstream:http://fineproxy.xyz:3094 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
     networks:
       - mitmproxy_net
 networks:
