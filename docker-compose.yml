@@ -1,0 +1,117 @@
+version: '3'
+services:
+  mitmproxy1:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy1
+    ports:
+      - "8080:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3081
+    networks:
+      - mitmproxy_net
+  mitmproxy2:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy2
+    ports:
+      - "8082:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3082
+    networks:
+      - mitmproxy_net
+  mitmproxy3:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy3
+    ports:
+      - "8084:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3083
+    networks:
+      - mitmproxy_net
+  mitmproxy4:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy4
+    ports:
+      - "8086:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3084
+    networks:
+      - mitmproxy_net
+  mitmproxy5:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy5
+    ports:
+      - "8088:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3085
+    networks:
+      - mitmproxy_net
+  mitmproxy6:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy6
+    ports:
+      - "8090:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3086
+    networks:
+      - mitmproxy_net
+  mitmproxy7:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy7
+    ports:
+      - "8092:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3087
+    networks:
+      - mitmproxy_net
+  mitmproxy8:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy8
+    ports:
+      - "8094:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3088
+    networks:
+      - mitmproxy_net
+  mitmproxy9:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy9
+    ports:
+      - "8096:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3089
+    networks:
+      - mitmproxy_net
+  mitmproxy10:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy10
+    ports:
+      - "8098:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3090
+    networks:
+      - mitmproxy_net
+  mitmproxy11:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy11
+    ports:
+      - "8100:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3091
+    networks:
+      - mitmproxy_net
+  mitmproxy12:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy12
+    ports:
+      - "8102:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3092
+    networks:
+      - mitmproxy_net
+  mitmproxy13:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy13
+    ports:
+      - "8104:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3093
+    networks:
+      - mitmproxy_net
+  mitmproxy14:
+    image: mitmproxy/mitmproxy
+    container_name: mitmproxy14
+    ports:
+      - "8106:8080"
+    command: mitmproxy --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3094
+    networks:
+      - mitmproxy_net
+networks:
+  mitmproxy_net:
+    driver: bridge
