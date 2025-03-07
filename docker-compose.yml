@@ -5,113 +5,141 @@ services:
     container_name: mitmproxy1
     ports:
       - "8080:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3081 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3081
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy2:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy2
     ports:
       - "8082:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3082 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3082
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy3:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy3
     ports:
       - "8084:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3083 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3083
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy4:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy4
     ports:
       - "8086:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3084 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3084
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy5:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy5
     ports:
       - "8088:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3085 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3085
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy6:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy6
     ports:
       - "8090:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3086 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3086
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy7:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy7
     ports:
       - "8092:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3087 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3087
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy8:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy8
     ports:
       - "8094:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3088 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3088
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy9:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy9
     ports:
       - "8096:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3089 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3089
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy10:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy10
     ports:
       - "8098:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3090 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3090
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy11:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy11
     ports:
       - "8100:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3091 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3091
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy12:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy12
     ports:
       - "8102:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3092 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3092
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy13:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy13
     ports:
       - "8104:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3093 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3093
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
   mitmproxy14:
     image: mitmproxy/mitmproxy
     container_name: mitmproxy14
     ports:
       - "8106:8080"
-    command: mitmproxy --mode upstream:http://fineproxy.xyz:3094 --upstream-auth PPR027ZAFX1:zAnMZB5W2YAALy
+    command: mitmdump --mode upstream:http://PPR027ZAFX1:zAnMZB5W2YAALy@fineproxy.xyz:3094
     networks:
       - mitmproxy_net
+    stdin_open: true
+    tty: true
 networks:
   mitmproxy_net:
     driver: bridge
